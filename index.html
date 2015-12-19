@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expense Divider</title>
+
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is simple tool where you can easily divide your expeses">
+	<meta name="author" content="Harsh Kothari">
+	<meta name="keywords" content="">
+
+	<!-- Facebook MetaTags -->
+	<meta property="og:title" content="Expense Divider By Harsh Kothari"/>
+	<meta property="og:url" content="http://harshkothari410/github.io/urldecoder">
+	<meta property="og:site_name" content="URLDecoder">
+	<meta property="og:description" content="This is simple tool where you can easily divide your expeses">
+
+	<!-- Twitter MataTags -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="http://harshkothari410/github.io/URLDecoder">
+	<meta name="twitter:creator" content="@harshkothari410">
+	<meta name="twitter:title" content="URLDecoder By Harsh Kothari">
+	<meta name="twitter:description" content="This is simple tool where you can easily divide your expeses">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+	<div class="jumbotron" align="center">
+		<h1>Expense Divider</h1>
+		<div>This is simple tool where you can divide expenses very easily</div>
+		<div>
+			<a href="https://twitter.com/share" class="social-share twitter-share-button" data-url="http://harshkothari410.github.io//expense_divider" data-text="This is simple tool where you can divide your expenses very easily" data-via="harshkothari410" data-hashtags="expensedivider" >Tweet</a>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="names col-sm-6 main-sec">
+				<h2 class="text-center">Add Person</h2>
+				<div class="form row">
+					<div class="col-sm-4">
+						<input type="text" placeholder="Name" class="col-sm-2 form-control" id="names"></input>
+					</div>
+					<div class="col-sm-2">
+						<button class="form-control" id="name_add">Add</button>
+					</div>
+				</div>
+
+				<div class="row" style="margin-top:10px;">
+					<div class="col-sm-4" id="names_append">
+						
+					</div>
+				</div>
+
+				<div class="">
+					<h4 class="text-success"> You have added <kbd id="name_count">0</kbd> persons </h4>
+				</div>
+
+			</div>
+
+			<div class="expense col-sm-6 ">
+				<h2 class="text-center">Add Expense</h2>
+				<div class="form row">
+					<div class="col-sm-4">
+						<input type="text" placeholder="Name" class=" form-control" id="expense_name"></input>
+					</div>
+
+					<div class="col-sm-4">
+						<input type="text" placeholder="Value" class="form-control" id="expense_val"></input>
+					</div>
+
+				</div>
+
+				<div class="form" id="checkbox_append">
+					<div class="checkbox">
+						<input type="checkbox" value="all">All</label>
+					</div>
+				</div>
+
+				<div class="form row">
+					<div class="col-sm-2">
+						<button class="form-control" id="expense_add">Add</button>
+					</div>
+				</div>
+
+				<div class="form">
+					<h4 class="text-success"> You have added <kbd id="item_count">0</kbd> items worth <code id="item_val">0.00</code> </h4>
+				</div>
+			</div>
+		</div>
+
+		<hr></hr>
+		<div class="row top-border">
+			<div class="col-sm-6">
+				<h3 class="text-center">Expense List</h3>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Iten No</th>
+							<th>Item Name</th>
+							<th>Value</th>
+							<th>Remove</th>
+						</tr>
+					</thead>
+					<tbody id="table_item_append">
+						
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col-sm-6">
+				<h3 class="text-center">Individual Expense</h3>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Expense</th>
+						</tr>
+					</thead>
+
+					<tbody id="table_name_append">
+						
+					</tbody>
+					
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default " role="navigation">
+		<div class="container navbar-text" align="center">
+			<span>Created By Harsh Kothari @MIT License</span>
+			<a class="btn btn-social-icon btn-facebook" href="https://facebook.com/harshkothari410">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a class="btn btn-social-icon btn-twitter" href="https://twitter.com/harshkothari410">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a class="btn btn-social-icon btn-github" href="https://github.com/harshkothari410">
+				<i class="fa fa-github"></i>
+			</a>
+			<a class="btn btn-social-icon btn-instagram" href="https://instagram.com/harshkothari410">
+				<i class="fa fa-instagram"></i>
+			</a>
+
+			<span style="float:right;">
+				<script type="text/javascript" src="http://counter6.statcounterfree.com/private/counter.js?c=1a1d761ca65270312300fae74e5a5083">
+				</script>
+			</span>
+		</div>
+	</nav>
+
+	<a href="https://github.com/harshkothari410/expense_divider"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
