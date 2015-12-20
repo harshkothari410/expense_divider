@@ -5,3 +5,8 @@
 .top-border{
 	/*border-top: 1px solid;*/
 }
+
+.text-white{
+	color: white;
+	margin-bottom: 15px;
+}
