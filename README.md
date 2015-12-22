@@ -1,2 +1,2 @@
-# expense_divider
+# Expense Divider
 This is simple tool for dividing Expenses
