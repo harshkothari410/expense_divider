@@ -89,7 +89,6 @@ $(function(){
 		var itemcount = parseInt( $('#item_count').text() );
 		var itemval = parseFloat( $('#item_val').text() );
 
-		//alert(itemval + 1.99);
 		// update counter and value
 		$('#item_count').text( itemcount - 1 );
 		$('#item_val').text( itemval - val );
